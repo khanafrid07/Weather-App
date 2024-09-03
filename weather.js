@@ -67,6 +67,9 @@ btn.addEventListener("click", async(event)=>{
         console.log(err, "invalid location")
         h3.innerHTML  = "Invalid Location";
         temper.innerHTML = ""
+        humidity.innerHTML = ""
+        feels_like.innerHTML = ""
+        precip.innerHTML = ""
     },1000);
 }
 })
