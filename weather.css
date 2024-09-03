@@ -1,0 +1,376 @@
+.outerDiv{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 10px 0px 20px 10px;
+    margin-top: 40px;
+    width: auto;
+    overflow: hidden;
+    height: 350px;
+    
+}
+body{
+    overflow: auto;
+   
+}
+.container_1{
+    margin: 10px;
+    margin-top: 0.5%;
+    background: none;
+    border: none;
+}
+.container_2{
+    margin: 10px;
+    margin-top: 70px;
+    background: none;
+    border: none;
+}
+
+.searchBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 1px;
+    position: sticky;
+}
+.box{
+    width: 35%;
+    
+}
+#weather_type{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+#location_name{
+    text-align: center;
+    margin-top: 50px;
+    height: 40px;
+   
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; 
+    z-index: -3;
+    background-size: cover;
+    background-attachment: scroll;
+    filter: blur(0.7px);
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+}
+
+#climate{
+    height: 180px;
+    width: 220px;
+    margin-bottom: 17px;
+}
+/* #myVideo{
+    position: fixed;
+    /* top: 50%;
+    left: 50%; */
+    /* width: 100%;
+    height: ;
+    
+  
+   
+    z-index: -1;
+    /* transform: translate(-50%, -50%); */
+    /* background-size: cover;
+    overflow: hidden;
+} */ 
+.city{
+    width: 500px;
+    border-radius: 3px;
+}
+#logo{
+    color: white;
+    font-size: xx-large;
+    position: fixed;
+    margin-top: 60px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+#logo_img{
+    height: 60px;
+    width: 60px;
+}
+.common_location{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: 280px;
+    /* position: absolute;
+    bottom: 130px;
+    left: 300px;
+    height: 100px; */
+    overflow: hidden;
+  
+    width: 100%;
+    
+}
+#weather_type{
+    font-size: medium;
+   
+}
+.card-body{
+    position: relative;
+    bottom: 12px;
+}
+#para{
+    height: 30px;
+    
+    position: relative;
+    bottom: 120px;
+    left: 400px;
+}
+.location_1{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    align-content: center;
+    align-self: self-end;
+    border-radius: 8px;
+
+}
+.location_2{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    align-content: center;
+    align-self: self-end;
+   border-radius: 8px;
+}
+.location_3{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    align-content: center;
+    align-self: self-end;
+    border-radius: 8px;
+}
+#climate{
+    animation: animate 3s infinite ease-in-out;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+.list{
+   position: relative;
+   right: 40px;
+}
+/* .orgDiv{
+    height: 80px;
+    width: 80px;
+    background-color: rgba(red, green, blue, 0.5);
+}
+   */
+#temper{
+    color: whitesmoke;
+    font-weight: bold;
+    position: relative;
+    top: 45px;
+    right: 60px;
+    height: 60px;
+    width: 60px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   font-size: xx-large;
+    
+}
+#cmn{
+    height: 10px;
+    position: relative;
+    top: 40px;
+    
+    left: 38%;
+    width: auto;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+   font-size: xx-large;
+    
+    
+    
+}
+p~a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+@media screen and (max-width: 760px){
+    /* .common_location{
+        overflow-y: scroll;
+    } */
+    .location_1, .location_2, .location_3 {
+        border: 2px solid black;
+        border-radius: 4px;
+        height: 50px;
+        width: 400px;
+        position: absolute; 
+        right: 180px; 
+        bottom: 130px; 
+    }
+   
+    #cmn{
+        position: relative;
+        right: 50px;
+        margin-left: -69px;
+        bottom: 50px;
+    }
+    .location_2 {
+        bottom: 70px; 
+    }
+    
+    .location_3 {
+        bottom: 10px; 
+    }
+    #country_1{
+        position: absolute;
+        bottom: 23px;
+        left: 90px;
+
+    }
+    #country_2{
+        position: absolute;
+        bottom: 25px;
+        left: 80px;
+
+        
+    }
+    #country_3{
+        position: absolute;
+        bottom: 25px;
+        left: 105px;
+
+    }
+    .location_1>p{
+        padding-right: 300px;
+    }
+    #one_temp{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+    }
+    #two_temp{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+
+    }
+    #three_temp{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+    }
+    .location_2>p{
+        padding-right: 310px;
+    }
+    .location_3>p{
+        padding-right: 290px;
+    }
+    
+    #logo_img{
+        height: 40px;
+        width: 40px;
+    }
+    .none{
+        display: none;
+    }
+    #feels_like_0{
+        display: none;
+    }
+    #feels_like_2{
+        display: none;
+    }
+    #feels_like_3{
+        display: none;
+    }
+
+    #humidity_0{
+        display: none;
+        
+    }
+    #humidity_2{
+        display: none;
+    }
+    #humidity_3{
+        display: none;
+    }
+    #logo{
+        font-size: x-large;
+        
+    }
+    .city{
+        width: 400px;
+    }
+    .d-flex{
+        width: 500px;
+        position: relative;
+        right: 150px;
+    }
+  
+    
+   
+    @media screen and (max-width: 760px) {
+        .location_1, .location_2, .location_3 {
+            right: 50%;
+            transform: translateX(50%); 
+        }
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 845px){
+    #para{
+        opacity: 0;
+    }
+    #cmn{
+        opacity: 1;
+    }
+}
+@media screen and (max-height: 700px){
+    #cmn{
+        /* display: none; */
+        position: relative;
+        top: -40px;
+        
+    }
+    .common_location{
+        position: relative;
+        top: -65px;
+    }
+}
+@media screen and (max-height: 900px){
+    #bg{
+        height: 65%;
+    }
+}
